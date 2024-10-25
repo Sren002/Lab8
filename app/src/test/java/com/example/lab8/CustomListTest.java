@@ -24,7 +24,7 @@ public class CustomListTest {
         int expectedCountBeforeAdd = 0;
         assertEquals(expectedCountBeforeAdd, list.getCount());
         City cityToAdd = new City("Edmonton", "AB");
-        list.add(cityToAdd);
+        list.addCity(cityToAdd);
 
         int expectedCount = 1;
         assertEquals(expectedCount, list.getCount());
@@ -33,9 +33,9 @@ public class CustomListTest {
     public void hasCityTest() {
         CustomList list = MockCityList();
         City cityToAdd = new City("Edmonton", "AB");
-        list.add(cityToAdd);
+        list.addCity(cityToAdd);
         assertTrue(list.hasCity(cityToAdd));
-        
+
 
     }
 
