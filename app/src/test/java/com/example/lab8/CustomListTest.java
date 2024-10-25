@@ -42,7 +42,8 @@ public class CustomListTest {
         City cityToAdd = new City("Edmonton", "AB");
         list.addCity(cityToAdd);
         list.deleteCity(cityToAdd);
-        assertTrue(list.isEmpty());
+
+        assertEquals(0,list.getCount());
     }
 
 }
