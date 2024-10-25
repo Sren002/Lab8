@@ -45,7 +45,7 @@ public class CustomListTest {
 
         assertEquals(0,list.getCount());
     }
-    
+
     @Test
     public void countCitiesTest() {
         CustomList list = MockCityList();
